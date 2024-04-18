@@ -1,8 +1,10 @@
 <div >
   <nav>
-    <button id="step1" routerLink="/Step1">Step 1</button>
-    <button id="step2" routerLink="/Step2" [disabled]="isStep2Disabled">Step 2</button>
-    <button id="step3" routerLink="/Step3" [disabled]="isStep3Disabled">Step 3</button>
+    <div class="row">
+      <div class="col-sm-4"><button id="step1" routerLink="/Step1">Step 1</button></div>
+      <div class="col-sm-4"><button id="step2" routerLink="/Step2" [disabled]="isStep2Disabled">Step 2</button></div>
+      <div class="col-sm-4"><button id="step3" routerLink="/Step3" [disabled]="isStep3Disabled">Step 3</button></div>
+    </div>
   </nav>
   <router-outlet></router-outlet>
   <br>
