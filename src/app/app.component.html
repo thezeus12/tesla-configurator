@@ -1,0 +1,11 @@
+<div >
+  <nav>
+    <button id="step1" routerLink="/Step1">Step 1</button>
+    <button id="step2" routerLink="/Step2" [disabled]="isStep2Disabled">Step 2</button>
+    <button id="step3" routerLink="/Step3" [disabled]="isStep3Disabled">Step 3</button>
+  </nav>
+  <router-outlet></router-outlet>
+  <br>
+  <img *ngIf="!isStep2Disabled"[src]="imgUrl"/>
+
+</div>
